@@ -115,6 +115,7 @@ class SearchSessionsFragment : DaggerFragment() {
         )
         searchView.isIconified = false
         searchView.queryHint = resources.getString(R.string.query_hint)
+        searchView.clearFocus()
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(s: String): Boolean {
                 return false
